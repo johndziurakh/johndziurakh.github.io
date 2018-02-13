@@ -1,0 +1,64 @@
+# category: filter
+# background: path to image
+# media-title: category
+# content: description
+# preview: preview (number)
+# like: like (number)
+# comment: comment (number)
+
+
+- category: graphics
+  background: assets/img/portfolio/portfolio1.png
+  media-title: Graphics
+  content: Lorem ipsum dolor sit amet.
+  preview: 5
+  like: 6
+  comment: 2
+  
+- category: web
+  background: assets/img/portfolio/portfolio2.png
+  media-title: WebDesign
+  content: Lorem ipsum dolor sit amet.
+  preview: 2
+  like: 1
+  comment: 1
+
+- category: seo
+  background: assets/img/portfolio/portfolio3.png
+  media-title: SEO
+  content: Lorem ipsum dolor sit amet.
+  preview: 2
+  like: 0
+  comment: 0
+
+- category: graphics
+  background: assets/img/portfolio/portfolio4.png
+  media-title: Graphics
+  content: Lorem ipsum dolor sit amet.
+  preview: 4
+  like: 1
+  comment: 2
+
+- category: web
+  background: assets/img/portfolio/portfolio5.png
+  media-title: WebDesign
+  content: Lorem ipsum dolor sit amet.
+  preview: 2
+  like: 1
+  comment: 0
+
+- category: graphics
+  background: assets/img/portfolio/portfolio6.png
+  media-title: Graphics
+  content: Lorem ipsum dolor sit amet.
+  preview: 6
+  like: 3
+  comment: 1
+
+- category: seo
+  background: assets/img/portfolio/portfolio7.png
+  media-title: SEO
+  content: Lorem ipsum dolor sit amet.
+  preview: 2
+  like: 1
+  comment: 1

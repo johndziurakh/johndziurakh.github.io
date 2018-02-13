@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="portfolio-wrap">
+	<div class="portfolio-menu box has-text-centered">
+		<h1 class="title is-3">Portfolio</h1>
+		<ul>
+			<li class="active" data-filter="*">All</li>
+			<li data-filter=".web">WebDesign</li>
+			<li data-filter=".seo">SEO</li>
+			<li data-filter=".graphics">Graphics</li>
+		</ul>
+	</div>
+	<div class="port-container">
+		<div class="portfolio-item">
+			{% for item in site.data.portfolio %}
+			<div class="item {{item.category}}">
+				<div class="item-background" style="background-image: url({{item.background}});">
+					<div class="item-overlay">
+						<div class="media-title">{{item.media-title}}</div>
+						<div class="item-content">
+							<p>{{item.content}}</p>
+							<div class="overlay-icons">
+								<ul>
+									<li><span><i class="fa fa-eye" aria-hidden="true"></i>{{item.preview}}</span></li>
+									<li><span><i class="fa fa-heart" aria-hidden="true"></i>{{item.like}}</span></li>
+									<li><span><i class="fa fa-commenting" aria-hidden="true"></i>{{item.comment}}</span></li>
+								</ul>
+							</div>
+						</div>		
+					</div>
+				</div>	
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

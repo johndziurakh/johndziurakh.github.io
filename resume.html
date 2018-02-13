@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+<div class="resume-wrap">
+	<div class="box has-text-centered">
+		<h1 class="title">Resume</h1>
+	</div>
+	<div class="box">
+		<div class="columns">
+			<div class="column is-6">
+				<!-- Education -->
+				<div class="education-content">
+					<h3 class="title is-4">Education</h3>
+					{% for item in site.data.education %}
+					<div class="education-description">
+						<span>{{item.years}}</span>
+						<h3 class="subtitle is-5">{{item.company}}</h3>
+						<p>{{item.description}}</p>
+					</div>
+					{% endfor %}
+				</div>
+				<!-- /Education -->
+			</div>
+			<div class="column is-6">
+				<div class="education-content">
+					<h3 class="title is-4">Expirience</h3>
+					{% for item in site.data.expirience %}
+					<div class="education-description">
+						<span>{{item.years}}</span>
+						<h3 class="subtitle is-5">{{item.position}}</h3>
+						<h4>{{item.company}}</h4>
+						<p>{{item.description}}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
