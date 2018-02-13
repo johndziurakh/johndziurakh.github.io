@@ -1,0 +1,23 @@
+.main-column{
+	height: calc(100vh - 50px);
+}
+.side-content{
+	padding: 10px 0;
+}
+.vertical-centred{
+	position: relative;
+	.menu{
+		content: "";
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		   -moz-transform: translate(-50% , -50%);
+		    -ms-transform: translate(-50% , -50%);
+		     -o-transform: translate(-50% , -50%);
+		        transform: translate(-50% , -50%);
+	}
+}
+
+
