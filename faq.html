@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="faq-wrapper">
+	<div class="box has-text-centered">
+		<h1 class="title is-3">FAQ</h1>
+	</div>
+
+	{% for item in site.data.faq %}
+		<div class="faq-item">
+			<div class="faq-item-title">
+				<div class="level">
+					<div class="level-left">{{item.title}}</div>
+					<span class="level-right"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+				</div>
+			</div>
+			<div class="faq-item-content">
+				<p class="faq-item-answer">{{item.content}}</p>
+			</div>
+		</div>
+	{% endfor %}
+
+</div>

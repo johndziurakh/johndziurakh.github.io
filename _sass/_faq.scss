@@ -1,0 +1,59 @@
+.faq-wrapper{
+	.faq-item{
+		margin-bottom: 20px; 
+		background: $color-white;
+		.faq-item-title{
+			font-size: 20px;
+			padding: 20px;
+			font-weight: 400;
+			&.rotate{
+				span{
+					-webkit-transform: rotate(180deg);
+					   -moz-transform: rotate(180deg);
+					    -ms-transform: rotate(180deg);
+					     -o-transform: rotate(180deg);
+					        transform: rotate(180deg);
+				}
+				
+			}
+		}
+		.faq-item-content{
+			border-top: 1px solid $faq-border;
+			.faq-item-answer{
+				font-size: 16px;
+				padding: 20px;
+				min-height: 100px;
+			}
+			.faq-item-icons{
+				border-top: 1px solid $faq-border;
+				background: $faq-icons-bg;
+				p{
+					padding: 10px 10px 0px 10px;
+				}
+			}
+		}
+	}
+}
+
+.rating {
+	padding: 10px;
+  	display: flex;
+}
+.rating-item {
+  	width: 40px;
+  	height: 40px;
+  	background-color: yellow;
+  	border: 2px solid #fff;
+  	cursor: pointer;
+}
+
+/* Добавлено */
+.rating-item.active ~ .rating-item {
+  	background: green;
+}
+.rating:hover .rating-item {
+  	background-color: yellow;
+}
+.rating-item:hover ~ .rating-item {
+  	background-color: green;
+}

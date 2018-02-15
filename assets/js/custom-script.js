@@ -5,7 +5,8 @@ $( window ).load(function() {
       setHeight: "400px",
       theme: "dark"
   });
-
+  
+  // Isotope click function
   $('.portfolio-item').isotope({
     itemSelector: '.item',
     masonry: {
@@ -13,7 +14,7 @@ $( window ).load(function() {
       percentPosition: true,
     }
   });
-  // Isotope click function
+  
   $('.portfolio-menu ul li').click(function(){
     $('.portfolio-menu ul li').removeClass('active');
     $(this).addClass('active');
@@ -24,5 +25,34 @@ $( window ).load(function() {
     });
     return false;
   });
+  // Isotope click function
+
+  /*faq acordeon*/
+  $('.faq-item .faq-item-content').hide();
+  $('.faq-item .faq-item-title').click(function(){ 
+    $(this).toggleClass( 'rotate' );
+    $(this).next('.faq-item-content').slideToggle('slow');
+  });
+  /*faq acordeon*/
+
+  //side-bar
+  $("[data-toggle]").click(function() {
+          var toggle_el = $(this).data("toggle");
+          $(toggle_el).toggleClass("open-sidebar");
+        });
+         $(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          });
+  //side-bar 
 
 });

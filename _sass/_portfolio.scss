@@ -44,8 +44,8 @@
 			-webkit-background-size: cover;
 			     -o-background-size: cover;
 			        background-size: cover;
-			-webkit-border-radius: 10px;
-			        border-radius: 10px;
+			-webkit-border-radius: $portfolio-rad;
+			        border-radius: $portfolio-rad;
 			}
 			@media screen and (max-width: 767px){
 				width:50%;
@@ -70,8 +70,8 @@
 				background: rgba(28,26,29, 0.5);
 				cursor: pointer;
 				z-index: 1000;
-				-webkit-border-radius: 10px;
-						border-radius: 10px;
+				-webkit-border-radius: $portfolio-rad;
+						border-radius: $portfolio-rad;
 				.item-content{
 					position: relative;
 					font-size: 20px;

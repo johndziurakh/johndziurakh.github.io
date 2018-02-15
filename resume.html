@@ -11,10 +11,10 @@ layout: default
 		<div class="columns">
 			<div class="column is-6">
 				<!-- Education -->
-				<div class="education-content">
+				<div class="resume-content">
 					<h3 class="title is-4">Education</h3>
 					{% for item in site.data.education %}
-					<div class="education-description">
+					<div class="resume-description">
 						<span>{{item.years}}</span>
 						<h3 class="subtitle is-5">{{item.company}}</h3>
 						<p>{{item.description}}</p>
@@ -23,11 +23,13 @@ layout: default
 				</div>
 				<!-- /Education -->
 			</div>
+
+			<!-- Expirience -->
 			<div class="column is-6">
-				<div class="education-content">
+				<div class="resume-content">
 					<h3 class="title is-4">Expirience</h3>
 					{% for item in site.data.expirience %}
-					<div class="education-description">
+					<div class="resume-description">
 						<span>{{item.years}}</span>
 						<h3 class="subtitle is-5">{{item.position}}</h3>
 						<h4>{{item.company}}</h4>
@@ -35,7 +37,8 @@ layout: default
 					</div>
 					{% endfor %}
 				</div>
-			</div>	
+			</div>
+			<!-- Expirience -->	
 		</div>
 	</div>
 </div>
