@@ -1,6 +1,6 @@
 body{
 	background: $body-bg;
-	color: $main-color;
+	color: #4A4A4A;
 	font-family: $main-font;
 }
 img {
@@ -37,7 +37,7 @@ img {
 }
 
 .box{
-	padding: 15px;
+	border-radius: $border-radius;
 	max-width: 100%;
 	overflow: hidden;
 }
