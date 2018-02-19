@@ -1,9 +1,13 @@
+#  years: job years
+#  position: position
+#  company: company name
+#  description: duties
+
 - years: 2012-2013
   position: Gournalist
   company: NYTimes
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, dolorem!
 
-  
 - years: 2013-2015
   position: WebDesigner
   company: Upwork

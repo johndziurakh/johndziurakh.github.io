@@ -18,91 +18,84 @@
 
 .portfolio-wrap{
 	width: 100%;
-		.port-container{
-			margin:-10px;
-		
-	.portfolio-item {
-		
-		width: 100%;
-		
-		.box{
-			margin: 0;
-		}
-		.item {
-			//padding: 10px;
-			margin: 0 auto;
-			display: block;
-			
-			width: 33.3%;
-			float: left;
-			position: relative;
-			padding:10px;
-
-			&>div{
-				min-height: 200px;
-							background-position: center;
-			-webkit-background-size: cover;
-			     -o-background-size: cover;
-			        background-size: cover;
-			-webkit-border-radius: $portfolio-rad;
-			        border-radius: $portfolio-rad;
+	.port-container{
+		margin:-10px;
+		.portfolio-item {
+			width: 100%;
+			.box{
+				margin: 0;
 			}
-			@media screen and (max-width: 767px){
-				width:50%;
-			}
-			@media screen and (max-width:480px){
-				width:100%;
-			}
-			.item-background{
+			.item {
+				margin: 0 auto;
 				display: block;
+				width: 33.3%;
+				float: left;
 				position: relative;
-			}
-			.item-overlay{
-				padding: 10px;
-				color: #FFF;
-				display: none;
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				background: rgba(28,26,29, 0.5);
-				cursor: pointer;
-				z-index: 1000;
-				-webkit-border-radius: $portfolio-rad;
-						border-radius: $portfolio-rad;
-				.item-content{
-					position: relative;
-					font-size: 20px;
-					top: 50%;
-					left: 50%;
-					-webkit-transform: translate(-50%, -50%);
-					   -moz-transform: translate(-50%, -50%);
-					    -ms-transform: translate(-50%, -50%);
-					     -o-transform: translate(-50%, -50%);
-					        transform: translate(-50%, -50%);
-					.overlay-icons{
-						text-align: center;
-						ul{
-							li{
-
-								font-size: 12px;
-								display: inline-block;
-								padding: 0 5px;
-								i{
-									padding-right: 5px;
-								}
-							}
-						}
-					}
+				padding:10px;
+				&:hover .item-overlay{
+					display: block;
 				}
 			}
-			&:hover .item-overlay{
-				display: block;
-			}
-			
 		}
 	}
 }
+.item{
+	.item-background{
+		display: block;
+		position: relative;
+		min-height: 200px;
+		background-position: center;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		-webkit-border-radius: $portfolio-rad;
+		border-radius: $portfolio-rad;
+	}
+	@media screen and (max-width: 767px){
+		width:50%;
+	}
+	@media screen and (max-width:480px){
+		width:100%;
+	}
+	.item-overlay{
+		padding: 10px;
+		color: #FFF;
+		display: none;
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(28,26,29, 0.5);
+		cursor: pointer;
+		z-index: 1000;
+		-webkit-border-radius: $portfolio-rad;
+				border-radius: $portfolio-rad;
+		.item-content{
+			position: relative;
+			font-size: 20px;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			  	-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+		}
+	}
+}
+.overlay-icons{
+	text-align: center;
+	ul{
+		li{
+
+			font-size: 12px;
+			display: inline-block;
+			padding: 0 5px;
+			i{
+				padding-right: 5px;
+			}
+		}
+	}
 }

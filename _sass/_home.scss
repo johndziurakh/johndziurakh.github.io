@@ -6,31 +6,33 @@
 		li{
 			display: inline-block;
 			padding: 0px 3px;
-			a{
-				position: relative;
-				display: block;
-				color: #4b5456;
-				width: 25px;
-				height: 25px;
-				border: 1px solid #4b5456;
-				background: none;
-				-webkit-border-radius: 50px;
-				        border-radius: 50px;
-				i{
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					-webkit-transform: translate(-50%, -50%);
-					   -moz-transform: translate(-50%, -50%);
-					    -ms-transform: translate(-50%, -50%);
-					     -o-transform: translate(-50%, -50%);
-					        transform: translate(-50%, -50%);
-					}
-				&:hover{
-					color: #FFF;
-					background: #4b5456;
-				}
-			}
+		}
+	}
+}
+.social{
+	a{
+		position: relative;
+		display: block;
+		color: #4b5456;
+		width: 25px;
+		height: 25px;
+		border: 1px solid #4b5456;
+		background: none;
+		-webkit-border-radius: 50px;
+		        border-radius: 50px;
+		i{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+		  	-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		&:hover{
+			color: #FFF;
+			background: #4b5456;
 		}
 	}
 }
