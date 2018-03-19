@@ -1,19 +1,20 @@
 $( window ).load(function() {
 
-
+  //scroll
   $(".content").mCustomScrollbar({
       axis:"y",
       setHeight: "400px",
       theme: "dark"
   });
+   //scroll
   
   // Isotope click function
   $('.portfolio-item').isotope({
     itemSelector: '.item',
-    /*masonry: {
+    masonry: {
       columnWidth: '.item',
-      //percentPosition: true,
-    }*/
+      percentPosition: true,
+    }
   });
   
   $('.portfolio-menu ul li').click(function(){
@@ -28,22 +29,28 @@ $( window ).load(function() {
   });
   // Isotope click function
 
-  /*faq acordeon*/
+  //faq acordeon
   $('.faq-item .faq-item-content').hide();
   $('.faq-item .faq-item-title').click(function(){ 
     $(this).toggleClass( 'rotate' );
     $(this).next('.faq-item-content').slideToggle('slow');
   });
-  /*faq acordeon*/
+  //faq acordeon
+
+  // sidenav-burger
+  $('.sidenav-burger').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('.sidenav').removeClass('active');
+            $('.sidenav-burger').removeClass('active');
+            $('.main-column').removeClass('overlay');
+        } else {
+            $(this).addClass('active');
+            $('.sidenav-burger').addClass('active');
+            $('.sidenav').addClass('active');
+            $('.main-column').addClass('overlay');
+        }
+    });
+  //sidenav-burger
 
 });
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "200px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
