@@ -1,5 +1,6 @@
 $( window ).load(function() {
 
+
   $(".content").mCustomScrollbar({
       axis:"y",
       setHeight: "400px",
@@ -9,10 +10,10 @@ $( window ).load(function() {
   // Isotope click function
   $('.portfolio-item').isotope({
     itemSelector: '.item',
-    masonry: {
+    /*masonry: {
       columnWidth: '.item',
-      percentPosition: true,
-    }
+      //percentPosition: true,
+    }*/
   });
   
   $('.portfolio-menu ul li').click(function(){
@@ -35,24 +36,14 @@ $( window ).load(function() {
   });
   /*faq acordeon*/
 
-  //side-bar
-  $("[data-toggle]").click(function() {
-          var toggle_el = $(this).data("toggle");
-          $(toggle_el).toggleClass("open-sidebar");
-        });
-         $(".swipe-area").swipe({
-              swipeStatus:function(event, phase, direction, distance, duration, fingers)
-                  {
-                      if (phase=="move" && direction =="right") {
-                           $(".container").addClass("open-sidebar");
-                           return false;
-                      }
-                      if (phase=="move" && direction =="left") {
-                           $(".container").removeClass("open-sidebar");
-                           return false;
-                      }
-                  }
-          });
-  //side-bar 
-
 });
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}

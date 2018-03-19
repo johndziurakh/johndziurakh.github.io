@@ -6,13 +6,9 @@
   	<body>
   		<div class="main-wrap">
 			<div class="container">
-				<div class="columns">
-				    {% include side-bar.html %}
-				    <div class="column">
-						<div class="main-column box"">
-				        		{{ content }}
-				   		</div>
-				   	</div>
+				{% include side-bar.html %}
+				<div id="main" class="main-column box"">
+				    {{ content }}
 				</div>
 			</div>
 		</div>
